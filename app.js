@@ -8,6 +8,7 @@ const {db} = require('./models');
 const wikiRouter = require('./routes/wiki');
 const userRouter = require('./routes/user');
 
+
 // console.log(wikiRouter);
 
 // const models = require('./models)');
@@ -40,7 +41,7 @@ app.get("/", (req, res) => {
 
 const init = async () => {
     await db.sync({force: true});
-    
+
     // await models.User.sync();
     // await models.Page.sync();
     const PORT = 8080;
